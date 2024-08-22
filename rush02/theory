@@ -1,0 +1,10 @@
+1) Check input ( main.c - main, ft_validate_input func)
+2) Read and parse the dictionary
+    1) Read the file and return it in a string 
+    2) Split the string into strings by newline
+    3) Split the strings into key and value
+3) Print the number
+    1) select the current hundreds
+    2) print the current hundreds
+    3) print the power of thousend 
+    4) repeat until input str is empty
