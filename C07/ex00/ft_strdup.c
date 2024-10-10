@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obehavka <obehavka@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: obehavka <obehavka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/08 12:31:49 by obehavka          #+#    #+#             */
-/*   Updated: 2024/08/08 12:49:45 by obehavka         ###   ########.fr       */
+/*   Updated: 2024/10/10 08:58:16 by obehavka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,7 @@ char	*ft_strdup(char *src)
 	char	*ret_str;
 	char	*tmp_ret_str;
 
-	if (src == NULL)
-		return (NULL);
-	ret_str = (char *)malloc (sizeof (char) * ft_strlen(src));
+	ret_str = (char *)malloc (sizeof (char) * (ft_strlen(src)) + 1);
 	if (ret_str == NULL)
 		return (NULL);
 	tmp_ret_str = ret_str;
